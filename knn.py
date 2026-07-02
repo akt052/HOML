@@ -14,12 +14,12 @@ class KNN:
 
     def predict(self, X):
 
-        distances = []
+            x = np.atleast_2d(x)
+            predictions = []
 
         for test_point in X:
 
-            x = np.atleast_2d(x)
-            predictions = []
+            distances = []
 
             for i in range(len(self.X_train)):
 
